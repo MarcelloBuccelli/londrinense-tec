@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #bcb9b9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 350px;
+      background-color: #bcb9b9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Topo */
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header a {
+      text-decoration: none;
+      font-size: 22px;
+      color: green;
+      margin-right: 10px;
+    }
+
+    .header h2 {
+      flex: 1;
+      text-align: center;
+      font-size: 20px;
+      color: green;
+    }
+
+    /* Label */
+    label {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 5px;
+      color: black;
+    }
+
+    /* Input */
+    .input-box input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .input-box input:focus {
+      border-color: #3a8bff;
+    }
+
+    /* Métodos */
+    .metodos {
+      margin-top: 25px;
+    }
+
+    .metodos p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .botao {
+      background-color: #e0e0e0;
+      border: none;
+      width: 48%;
+      padding: 20px 10px;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .botao img {
+      display: block;
+      margin: 0 auto 8px;
+      width: 30px;
+    }
+
+    /* Botão continuar */
+    .continuar {
+      margin-top: 30px;
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background-color: #8d8888;
+      color: green;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: not-allowed;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <div class="header">
+      <a href="#">←</a>
+      <h2>Pagamento</h2>
+    </div>
+
+    <!-- Campo de entrada -->
+    <div class="input-box">
+      <label for="pagamento">Quem você deseja pagar?</label>
+      <input type="text" id="pagamento" placeholder="Cpf, Cnpj, Telefone">
+    </div>
+
+    <!-- Outros métodos -->
+    <div class="metodos">
+      <p>Outros Métodos</p>
+      <div class="botoes">
+        <button class="botao">
+          <img src="https://img.icons8.com/ios-filled/50/000000/qr-code.png" alt="QR">
+          QR code
+        </button>
+        <button class="botao">
+          <img src="https://img.icons8.com/ios-filled/50/000000/copy.png" alt="Copy">
+          Copia e cola
+        </button>
+      </div>
+    </div>
+
+    <!-- Botão continuar -->
+    <button class="continuar">continuar</button>
+  </div>
+</body>
+</html>
